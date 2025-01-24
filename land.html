@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Code War</title>
+</head>
+<body>
+    <header class="header">Gear up, warrior! The code battle awaits.</header>
+    <style>
+        body{
+            background-image: url(bg-image.jpg);
+            background-size: cover;
+            font-family: "Sofia", sans-serif;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 670px;
+            
+        }
+        .child-p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid whitesmoke;
+            border-radius: 10%;
+             height: 400px;
+             width: 400px;
+             border-radius:  solid rgba(0, 0, 0, 0);
+          /* To make background blur and transporant */
+             backdrop-filter:blur(5px) brightness(90%); 
+           /* To make background blur and transporant */   
+        }
+        #button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .items{
+            margin: 40px;
+        }
+        .button{
+            width: 280px;
+            height: 40px;
+            font-family: "Indie Flower", serif;
+            background-color: rgb(0, 0, 0);
+            border-radius: 8px;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        button:hover{
+            background-color: rgba(42, 0, 0, 0.901);
+        }
+        .input{
+            width: 280px;
+            height: 30px;
+            border-radius: 7px;
+        }
+        .h-text{
+            display: flex;
+            justify-content: center;
+            color: rgb(254, 255, 254);
+            font-size: 40px;
+        }
+        .b-text{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            color: aliceblue;
+            font-size: 60px;
+        }
+
+    </style>
+    <div class="parent">
+        <div class="child-p">
+            <form action="post">
+                <h1 class ="h-text">CodeWar.com</h1>
+                <div class ="items">
+                    <label for="Name"></label>
+                    <input class="input" type="text" placeholder="User-Name">
+                </div> 
+                
+                <div class ="items">
+                    <label for="Email"></label>
+                    <input class="input" type="text" placeholder="Email">
+                </div>
+                
+                <div id="button">
+                    <button class = "button" type="submit">Login</button>
+                </div>
+                <h4 class="b-text">Don't have Account ? <a href="" target="_blank" style="color: yellow;">Signup</a></h4>
+            </form>
+        </div> 
+    </div>
+</body>
+</html>
